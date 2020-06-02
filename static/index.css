@@ -1,0 +1,111 @@
+html {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.non-selectable-text {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+.material-icons {
+    @extend .non-selectable-text;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #FAFAFA;
+    padding:
+        env(safe-area-inset-top, 20px)
+        env(safe-area-inset-right, 20px)
+        env(safe-area-inset-bottom, 20px)
+        env(safe-area-inset-left, 20px);
+}
+
+.quarter-container {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 60px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.quarter-text {
+    @extend .non-selectable-text;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+}
+
+.scroll-container {
+    overflow-y: auto;
+    height: 100%;
+    padding-left: 30px;
+    background-color: white;
+}
+
+.tab-container {
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: row;
+    padding: 5px 40px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FAFAFA;
+}
+
+.tab-text-container {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-text {
+    @extend .non-selectable-text;
+    padding: 5px 0px;
+}
+
+.course-card {
+    position: absolute;
+    bottom: -70px;
+    height: 60px;
+    width: calc(100% - 20px);
+    margin: 10px 10px;
+    background-color: #BAE1FF;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.25), -1px 1px 2.5px rgba(0, 0, 0, 0.25);
+}
+
+.course-card-header {
+    margin: 0px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-card-text {
+    @extend .non-selectable-text;
+    font-family: 'Roboto';
+    font-weight: bold;
+}

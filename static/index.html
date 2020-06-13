@@ -3,9 +3,11 @@
 <head>
     <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./index.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>  
 </head>
 <body>
     <div style="background-color: white">
@@ -18,48 +20,41 @@
                 <i class="material-icons" style="font-size: 36px">expand_more</i>
             </div>
         </div>
+        <div class="date-container">
+            <p class="date-text"></p>
+            <p class="date-text">Sun</p>
+            <p class="date-text">Mon</p>
+            <p class="date-text">Tues</p>
+            <p class="date-text">Wed</p>
+            <p class="date-text">Thurs</p>
+            <p class="date-text">Fri</p>
+            <p class="date-text">Sat</p>
+        </div>
     </div>
     <div class="scroll-container">
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>        
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>        
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
-        <p class="test-text">test</p>
+        <div class="time-container"><p class="time-text">8am</p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p></div>
+        <div class="time-container"><p class="time-text">9am</p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p></div>
+        <div class="time-container"><p class="time-text">10am</p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p></div>
+        <div class="time-container"><p class="time-text">11am</p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p></div>
+        <div class="time-container"><p class="time-text">12am</p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p></div>
+        <div class="time-container"><p class="time-text">1pm</p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p></div>
+        <div class="time-container"><p class="time-text">2pm</p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p></div>
+        <div class="time-container"><p class="time-text">3pm</p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p></div>
+        <div class="time-container"><p class="time-text">4pm</p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p></div>
+        <div class="time-container"><p class="time-text">5pm</p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p></div>
+        <div class="time-container"><p class="time-text">6pm</p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p></div>
+        <div class="time-container"><p class="time-text">7pm</p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p></div>
+        <div class="time-container"><p class="time-text">8pm</p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p></div>
+        <div class="time-container"><p class="time-text">9pm</p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p></div>
+        <div class="time-container"><p class="time-text">10pm</p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p></div>
+        <div class="time-container"><p class="time-text">11pm</p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p><p class="time-text"></p></div>
     </div>
     <div class="tab-container">
         <div class="tab-text-container">
-            <p class="tab-text" style="color: #7D7D7D;">Calendar</p>
+            <p class="tab-text" style="border-bottom: 1px solid; border-color: #034263; color: #034263;">Calendar</p>
         </div>
         <div class="tab-text-container">
-            <p class="tab-text" style="border-bottom: 1px solid; border-color: #034263; color: #034263;">List</p>
+            <p class="tab-text" style="color: #7D7D7D;">List</p>
         </div>
         <div class="tab-text-container">
             <p class="tab-text" style="color: #7D7D7D;">Finals</p>
@@ -67,9 +62,91 @@
     </div>
     <div class="course-card">
         <div class="course-card-header">
-            <p class="course-card-text">CSE 100</p>
+            <div class="course-card-header-info">
+                <div class="course-card-unit-container">
+                    <p class="course-card-unit-text">4</p>
+                </div>
+                <div class="course-card-text-container">
+                    <p class="course-card-code-text">CSE 100</p>
+                    <p class="course-card-title-text">Advanced Data Structures</p>
+                </div>
+            </div>
             <div class="close-button">
                 <i class="material-icons">clear</i>
+            </div>
+        </div>
+        <div class="course-card-detail">
+            <div class="course-card-professor">
+                <div>
+                    <p class="course-card-professor-text">Gillespie, Gary N</p>
+                </div>
+                <div class="course-card-section-container">
+                    <p class="course-card-section-text">Section ID</p>
+                    <p class="course-card-section-id">983761</p>
+                </div>
+            </div>
+            <div class="course-card-lecture">
+                <div class="course-card-normal">
+                    <div style="display: flex; flex: 1">
+                        <p class="section-text">A00</p>
+                        <p class="section-type-text">LE</p>
+                    </div>
+                    <div style="display: flex; flex: 1; align-self: center;">
+                        <p class="section-date-text">M</p>
+                        <p class="section-date-text-active">T</p>
+                        <p class="section-date-text">W</p>
+                        <p class="section-date-text-active">T</p>
+                        <p class="section-date-text">F</p>
+                    </div>
+                    <p class="section-time-text">3:30p - 4:50p</p>
+                    <div style="display: flex; flex: 1; justify-content: space-between;">
+                        <p class="section-place-text">PCYNH</p>
+                        <p class="section-room-text">106</p>
+                    </div>
+                </div>
+                <div class="course-card-normal">
+                    <div style="display: flex; flex: 1">
+                        <p class="section-text">A01</p>
+                        <p class="section-type-text">DI</p>
+                    </div>
+                    <div style="display: flex; flex: 1; align-self: center;">
+                        <p class="section-date-text">M</p>
+                        <p class="section-date-text-active">T</p>
+                        <p class="section-date-text">W</p>
+                        <p class="section-date-text">T</p>
+                        <p class="section-date-text">F</p>
+                    </div>
+                    <p class="section-time-text">7:30p - 8:20p</p>
+                    <div style="display: flex; flex: 1; justify-content: space-between;">
+                        <p class="section-place-text">PCYNH</p>
+                        <p class="section-room-text">106</p>
+                    </div>
+                </div>
+                <div class="course-card-final">
+                    <div style="flex: 1">
+                        <p class="section-text">FINAL</p>
+                    </div>
+                    <div style="flex: 1; align-self: center;">
+                        <p class="final-date-text">Mon 12/13</p>
+                    </div>
+                    <p class="section-time-text">3:00p - 5:59p</p>
+                    <div style="display: flex; flex: 1; justify-content: space-between;">
+                        <p class="section-place-text">TBA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card-action-container">
+                <div class="course-card-grading-container">
+                    <div class="pnp-grading-container">
+                        <p class="pnp-grading-text">P/NP</p>
+                    </div>
+                    <div class="letter-grading-container">
+                        <p class="letter-grading-text">Letter</p>
+                    </div>
+                </div>
+                <div class="course-card-drop-container">
+                    <p class="drop-text">Drop course</p>
+                </div>
             </div>
         </div>
     </div>
@@ -81,12 +158,77 @@
             return false;
         }
 
+        let courseTop = 0;
+
+        const courseCard = (startTime, endTime, days, title, place, type, calendarWidth) => {
+            const [startHour, startMinute] = startTime.split(":");
+            const [endHour, endMinute] = endTime.split(":");
+            const height = (endHour - startHour) * 57 + (endMinute - startMinute) * 57 / 60;
+            const width = calendarWidth - 2;
+            const cards = days.map(day => {
+                const left = (day + 1) * calendarWidth + 1;
+                const top = (startHour - 8) * 57 + startMinute * 57 / 60 - 911 - courseTop;
+                courseTop += height;
+                return `
+                    <div class="calendar-card" style="position: relative; top: ${top}px; left: ${left}px; height: ${height}px; width: ${width}px">
+                        <p class="calendar-card-type-text" style="width: ${width}px;">${type}</p>
+                        <div class="calendar-card-detail" style="height: ${height - 10}px;">
+                            <p class="calendar-card-title-text">${title}</p>
+                            <p class="calendar-card-place-text">${place}</p>
+                        </div>
+                    </div>
+                `
+            })
+            return cards;
+        };
+
+        $(document).ready(function () {
+            const calendarWidth = $('.date-container').width();
+
+            $('.scroll-container').append(
+                courseCard("15:30", "16:50", [2, 4], "CSE 100", "PCYNH 106", "LE", calendarWidth / 8),
+                courseCard("19:30", "20:20", [2], "CSE 100", "PCYNH 106", "DI", calendarWidth / 8)
+            );
+        })
+
         $(document).click(function (e) {
-            if (checkSelfAndParentClass(e.target, 'test-text')) {
+            if (checkSelfAndParentClass(e.target, 'calendar-card')) {
                 const paddingBottom = parseInt($('body').css('padding-bottom').replace(/^\D+/g, ''));
                 $('.course-card').stop().animate({ "bottom": `${paddingBottom+60}px` }, 100);
             } else if (checkSelfAndParentClass(e.target, 'close-button')) {
-                $('.course-card').stop().animate({ "bottom": "-70px" }, 100);
+                $('.course-card').stop().animate({ "bottom": "-240px" }, 100);
+            } else if (checkSelfAndParentClass(e.target, 'tab-text')) {
+                $('.tab-text').attr("style", "color: #7D7D7D;");
+                $(e.target).attr("style", "border-bottom: 1px solid; border-color: #034263; color: #034263;");
+            } else if (checkSelfAndParentClass(e.target, "pnp-grading-container")) {
+                $('.pnp-grading-container').attr("style", "background-color: #034263; padding: 6px 0px; flex: 1; justify-content: center; align-items: center;");
+                $('.pnp-grading-text').attr("style", "margin: 0px; font-family: 'Roboto'; font-size: 13px; color: white; text-align: center;");
+                $('.letter-grading-container').attr("style", "background-color: white; padding: 6px 0px; flex: 1; justify-content: center; align-items: center;");
+                $('.letter-grading-text').attr("style", "margin: 0px; font-family: 'Roboto'; font-size: 13px; color: #034263; text-align: center;");
+            } else if (checkSelfAndParentClass(e.target, "letter-grading-container")) {
+                $('.letter-grading-container').attr("style", "background-color: #034263; padding: 6px 0px; flex: 1; justify-content: center; align-items: center;");
+                $('.letter-grading-text').attr("style", "margin: 0px; font-family: 'Roboto'; font-size: 13px; color: white; text-align: center;");
+                $('.pnp-grading-container').attr("style", "background-color: white; padding: 6px 0px; flex: 1; justify-content: center; align-items: center;");
+                $('.pnp-grading-text').attr("style", "margin: 0px; font-family: 'Roboto'; font-size: 13px; color: #034263; text-align: center;");
+            } else if (checkSelfAndParentClass(e.target, "course-card-drop-container")) {
+                $.confirm({
+                    title: 'Drop course',
+                    content: 'Are you sure to drop the course',
+                    buttons:  {
+                        confirm: {
+                            text: 'Confirm',
+                            action: function(){
+                                //on confirm
+                            }
+                        },
+                        cancel: {
+                            text: 'Cancel',
+                            action: function(){
+                                //on cancel
+                            }
+                        },
+                    }
+                })
             }
         })
     </script>

@@ -1,5 +1,28 @@
 import React from 'react';
-import './index.scss';
+import { SearchOutlined } from '@ant-design/icons';
+import Header from '../Common/Header';
+
+const styles = {
+  headerTextStyle: {
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  rightContainerStyle: {
+    backgroundColor: '#F1F1F1',
+    marginRight: 7,
+    borderRadius: 22,
+    borderColor: '#034263',
+    boxSizing: 'border-box',
+  },
+  searchIconStyle: {
+    color: 'black',
+    fontSize: 21,
+    marginTop: 5,
+    marginBottom: 5,
+    marginRight: 10,
+    marginLeft: 32,
+  },
+};
 
 class Home extends React.Component {
   constructor(props) {
@@ -8,13 +31,17 @@ class Home extends React.Component {
   }
 
   render() {
+    const { headerTextStyle, rightContainerStyle, searchIconStyle } = styles;
+
+    const webRegText = <p style={headerTextStyle}>Webreg</p>;
+    const searchTab = (
+      <div style={rightContainerStyle}>
+        <SearchOutlined style={searchIconStyle} />
+      </div>
+    );
     return (
       <div className="home">
-        <div className="header">
-          <div className="left"><p>1</p></div>
-          <div className="center"><p>2</p></div>
-          <div className="right"><p>33333333333333333333333333333333</p></div>
-        </div>
+        <Header center={webRegText} right={searchTab} />
       </div>
     );
   }

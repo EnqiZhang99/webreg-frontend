@@ -1,6 +1,7 @@
 import React from 'react';
 import { SearchOutlined } from '@ant-design/icons';
 import Header from '../Common/Header';
+import './index.scss';
 
 const styles = {
   headerTextStyle: {

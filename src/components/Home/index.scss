@@ -1,0 +1,22 @@
+@import '../Common/constant';
+
+.header {
+  background-color: $primary-color;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: $white;
+
+  .left {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .center {
+    @include centerContent;
+  }
+
+  .right {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

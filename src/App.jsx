@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from './reducers';
 import Home from './components/Home';
+import Boilerplate from './components/Boilerplate';
 import './App.css';
 
 /** Private Route example */
@@ -24,7 +25,10 @@ function App() {
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <Router>
-          <Route path="/" exact component={Home} />
+          <Route path="/" exact component={Boilerplate} />
+        </Router>
+        <Router>
+          <Route path="/home" exact component={Home} />
         </Router>
       </PersistGate>
     </Provider>
